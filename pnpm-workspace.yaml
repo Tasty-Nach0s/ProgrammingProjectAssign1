@@ -14,6 +14,15 @@ overrides:
   postcss: '^8.5.18'
   # next also bundles an old sharp (image optimization) — force the patched line.
   sharp: '^0.35.0'
+  # next>postcss>nanoid and vitest's postcss chain both pull in an old nanoid
+  # with a DoS bug when size=0 (CVE fix GHSA-2v37-7h3g-55p8).
+  nanoid: '>=3.3.17'
+  # eslint's config loader chain pulls in an old js-yaml with a quadratic-time
+  # !!omap parsing bug (CVE-2026-59870).
+  js-yaml: '>=4.3.1'
+  # firebase-admin's Google auth chain (gaxios) pulls in an old uuid with a
+  # missing buffer bounds check in v3/v5/v6 when buf is provided (GHSA-w5hq-g745-h8pq).
+  uuid: '>=11.1.1'
 
 allowBuilds:
   '@firebase/util': true

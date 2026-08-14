@@ -23,7 +23,7 @@ const members = [
     name: 'Senuka Edirisinghe',
     role: 'UX',
     initials: 'SE',
-    image: '/team/profile_senuka.png',
+    image: '/team/profile_senuka.jpeg',
     blurb: "Hi supervisors I'm Senuka I'm in my third year of studying bachelor of information technology majoring in cyber security. I'm the teams UX designer, looking forward to getting to know everyone!",
   },
   {

@@ -22,7 +22,7 @@ overrides:
   js-yaml: '>=4.3.1'
   # firebase-admin's Google auth chain (gaxios) pulls in an old uuid with a
   # missing buffer bounds check in v3/v5/v6 when buf is provided (GHSA-w5hq-g745-h8pq).
-  uuid: '>=11.1.1'
+  uuid: '^11.1.1'
 
 allowBuilds:
   '@firebase/util': true
